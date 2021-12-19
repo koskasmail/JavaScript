@@ -1,0 +1,14 @@
+
+
+----[javaScript variable math]------------- 
+
+- arithmetic operators
+
+- assignment operators
+
+- Increment / decrement  Operators:
+
+- Prefix & Postfix
+
+todo: write free word in each subject ------erase this line when done-----------
+

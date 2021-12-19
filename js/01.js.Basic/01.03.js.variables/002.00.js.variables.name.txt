@@ -1,0 +1,28 @@
+
+
+----[JavaScript variable name]------------- 
+
+- JavaScript is case sensitive. 
+-- example: two different variables name: "lastName" -and- "lastname" .
+
+--- example: variable name
+    variable_declare  variable_name  =  variable_value
+
+
+--- example: variable name
+    var stFirstName = 'ofekbytes';
+    let stLastName = 'ofekbytes';
+    const stCity = 'tel_aviv');
+
+.
+.
+- variable name are camelCase --> camelCaseVariable
+
+--- example:
+
+    var stBanner = "Welcome .";
+    var userAge = 55;
+    var isUserNew = true;
+
+-!- javaScript variable name can be any name except javaScript reserved words. 
+

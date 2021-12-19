@@ -1,0 +1,22 @@
+
+
+----[javaScript variable assignment (equal sign  '=')]------------- 
+
+- variable assignment (equal sign  '=') 
+
+- JavaScript assignment (=) - declare a variable and assign him a value.
+
+
+--- example: assign the variable name "number" a variable data type value of a number data type value 10
+
+    var variable)name = variable_data_type_value;
+
+    var number = 10;
+
+--- example: declare a variable without assignment. (variable declared value is equals to "undefined")
+    var number; 
+
+--- example:
+    var x, y = 10;
+    y = x;
+    console.log('x = ' + x + ' y = ' + y);

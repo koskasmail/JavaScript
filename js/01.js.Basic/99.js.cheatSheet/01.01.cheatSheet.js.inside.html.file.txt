@@ -1,0 +1,158 @@
+// todo. change file name //
+
+----[cheatSheet.001]------------
+
+
+.
+.
+01.01.001.  javaScript comment inside javaScript file
+
+
+// one line Comment
+
+
+/*
+* Some Line Comments
+* more Comments ...
+*/
+
+
+.
+.
+01.01.002. javaScript comment inside html file
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Inside Html</title>
+
+    <script>
+    // ..js-comments..
+    // ..inside head tag..
+        /*
+        * js comments... inside head tag
+        */
+    </script>
+</head>
+
+<body>
+    <script>
+        // ..js-comments..
+        // ..inside body tag..
+        /*
+        * js comments... inside head tag
+        */
+
+    </script>
+
+    <!-- "noscript" - no java script error message -->
+    <noscript>
+        <h3>JavaScript is Required</h3>
+    </noscript>
+</body>
+
+</html>
+
+.
+.
+01.01.003. javaScript comment inside html (with noscript tag)
+.
+.
+1. JavaScript template 
+
+- JavaScript Template Inside HTML file
+
+    <script>
+        ...
+        ...
+    </script>
+
+    <!-- no java script error message -->
+    <noscript>
+        <h3>JavaScript is Required</h3>
+    </noscript>  
+
+// TODO.add //
+console
+document
+
+
+.
+.
+01.01.004. javaScript console() inside javaScript file
+.
+
+    console.info("console.info");
+    console.log("console.log");
+    console.warn("console.warn");
+    console.error("console.error");        
+
+
+.
+.
+01.01.004. javaScript console() inside html file
+.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Inside Html</title>
+
+    <script>
+        console.info("console.info");
+        console.log("console.log");
+        console.warn("console.warn");
+        console.error("console.error");        
+    </script>
+</head>
+
+<body>
+    <script>
+        console.info("console.info");
+        console.log("console.log");
+        console.warn("console.warn");
+        console.error("console.error");        
+    </script>
+</body>
+</html>
+
+
+.
+.
+01.01.005. javaScript console() inside javaScript file
+.
+
+    document.write("<h2>head script - run first *</h2>");
+
+.
+.
+01.01.005. javaScript console() inside html file
+.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Inside Html</title>
+
+    <script>
+        document.write("<h2>head script - run first *</h2>");
+    </script>
+</head>
+
+<body>
+    <script>
+        document.write("<h2>body script - run second **</h2>");
+    </script>
+</body>
+</html>
+
+

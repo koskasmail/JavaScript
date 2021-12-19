@@ -1,0 +1,16 @@
+
+
+----[subjects]------------
+
+*.JavaScript
+**.js.Basic	
+**.js.ES6
+**.js.Regular.Expressions
+**.js.Debugging
+**.js.Basic.Data.Structures
+**.js.Basic.Algorithm.Scripting
+**.js.Object.Oriented.Programming
+**.js.Functional.Programming
+**.js.Intermediate.Algorithm.Scripting
+**.js.JavaScript.Algorithms.and.Data.Structures.Projects
+**.

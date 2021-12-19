@@ -1,0 +1,26 @@
+
+
+----[javaScript typeof() - type of variable]------------- 
+
+
+-- The typeof operator returns a string indicating the type of the unevaluated operand.
+
+--- example:
+
+<script>
+    var stLastName = "jack"
+    typeof(stLastName);
+</script>
+
+
+-!- JavaScript variables are declared, they have an initial value of "undefined".
+    If you do a mathematical operation on an "undefined" variable your result will be "NaN" (Not A Number).
+
+--- example:
+
+    // unassigned variable value //
+    var stName ;
+    var a;
+    console.log("stName === " + stName); //undefined
+    console.log("a += 2 === " + (a += 2) ); //NaN (Not A Number)
+

@@ -1,0 +1,19 @@
+
+
+----[JavaScript variables declaration]------------
+
+- JavaScript provides 8 different data types:
+  undefined, null, boolean, string, symbol, bigint, number, object.
+
+
+- 3 ways to declare a variable.
+-- var --> var can be used in all the program - function scope .
+-- let --> let can be used in code scope - block scope (javaScript version: es2015/es6) .
+-- const --> const is a constants that never change (javaScript version: es2015/es6) .
+
+
+-- example:
+    var variableVar = "var can be used in all the program ";
+    let variableLet = "let can be used in code scope";
+    const constTitle = "const is a constants that never change";
+

@@ -1,0 +1,8 @@
+
+
+---[describe ascii character names]----------------------
+
+< : >  ==>  colon
+< ; >  ==>  semicolon
+
+

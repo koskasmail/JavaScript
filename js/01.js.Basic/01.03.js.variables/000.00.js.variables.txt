@@ -1,0 +1,12 @@
+
+
+----[JavaScript variables]------------
+
+- Variable/s are container/s for storing data value/s. 
+  The value of a variable can change throughout the program.
+
+- example: 
+    var myName = "jron";
+    var count = 33;
+
+    

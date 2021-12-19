@@ -1,0 +1,26 @@
+
+
+----[JavaScript Basic]------------
+
+
+- web components: 
+-- HTML -- content of web pages
+-- CSS -- layout/design of web pages.
+-- JavaScript -- behavior of web pages.
+
+- JavaScript used inside: 
+-- Web Pages
+-- Desktop 
+-- Server (Node.js) 
+-- Databases (MongoDB, CouchDB) as their programming language.
+
+- JavaScript (JS) is a high-level, lightweight, interpreted, interpreted, 
+  just-in-time compiled programming language that conforms to the ECMAScript specification. 
+  JavaScript characterized as dynamic, weakly typed, prototype-based, multi-paradigm.
+
+- JavaScript process data, applications (mobile, desktop, games)
+  JavaScript is using to client-side(frontend inside browser) -or- 
+  server-side(backend insdie server like: node.js) .
+
+
+

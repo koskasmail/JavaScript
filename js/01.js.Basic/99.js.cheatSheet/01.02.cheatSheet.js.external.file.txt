@@ -1,0 +1,50 @@
+
+
+----[JavaScript insdie external file]------------
+
+
+----[index.html]------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js external</title>
+</head>
+<body>
+    <script src="001.external.js" defer></script>
+    <script src="002.external.console.tag.js" defer></script>
+    <script src="003.external.document.tag.js" defer></script>
+</body>
+</html>
+
+
+
+----[001.external.js]------------
+
+// one line comment 
+
+/*
+* multi line comment
+*/
+
+
+
+----[002.external.console.tag.js]------------
+
+console.info("..1..external javaScript - console style:  info / log / warn / error");
+console.info("console.info");
+console.log("console.log");
+console.warn("console.warn");
+console.error("console.error");
+
+
+
+----[003.external.document.tag.js]------------
+
+document.write("<h1>js external - document.write()</h1>");
+document.write("<h2>head script - run first *</h2>");
+document.write("<h2>body script - run second **</h2>");
+

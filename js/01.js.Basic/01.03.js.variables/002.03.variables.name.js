@@ -14,7 +14,7 @@ const hugeString = BigInt("9007199254740991");
 const hugeHex = BigInt("0x1fffffffffffff");
 const hugeOctal = BigInt("0o377777777777777777");
 const hugeBin = BigInt("0b11111111111111111111111111111111111111111111111111111");
-const ho = hugeOctal(10);
+// const ho = hugeOctal(10);
 
 console.warn('JavaScript 7 different data types:');
 console.warn('undefined, null, boolean, string, symbol, number, object. ');

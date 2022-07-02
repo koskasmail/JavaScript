@@ -1,0 +1,100 @@
+---[JavaScriptslinks.temp]---
+
+\\\ mozilla \\\ console.*
+https://developer.mozilla.org/en-US/docs/Web/API/Console?retiredLocale=he
+https://developer.mozilla.org/en-US/docs/Web/API/Window
+https://developer.mozilla.org/en-US/docs/Web/API/Window/console
+https://console.spec.whatwg.org/
+https://console.spec.whatwg.org/#log
+
+
+/// example ///
+https://www.webtips.dev/9-different-use-cases-of-console-log
+https://dev.to/fatematzuhora/different-use-cases-of-console-log-you-should-use-when-debugging-javascript-30pf
+
+
+
+\\\ JS \\\
+https://www.youtube.com/watch?v=7UMuJMiNjSk&list=RDCMUCFbNIlppjAuEX4znoulh0Cw&index=1
+https://www.youtube.com/watch?v=7UMuJMiNjSk&list=RDCMUCFbNIlppjAuEX4znoulh0Cw&start_radio=1
+
+
+/// JS #0 ///
+https://www.youtube.com/watch?v=Mus_vwhTCq0&t=29s
+
+
+/// JS FULL #1 - #4 ///
+https://www.youtube.com/watch?v=Sh6lK57Cuk4&list=PL0vfts4VzfNixzfaQWwDUg3W5TRbE7CyI
+
+
+/// JS #1 ///
+https://www.youtube.com/watch?v=9emXNzqCKyg&t=48s
+
+/// JS #2 ///
+https://www.youtube.com/watch?v=FSs_JYwnAdI&t=44s
+
+/// JS #3 ///
+https://www.youtube.com/watch?v=9emXNzqCKyg
+
+/// JS #4 ///
+https://www.youtube.com/watch?v=gigtS_5KOqo
+
+/// JS Other ///
+https://www.youtube.com/watch?v=Sh6lK57Cuk4&t=12s
+https://www.youtube.com/watch?v=9emXNzqCKyg&t=48s
+https://www.youtube.com/watch?v=FSs_JYwnAdI&t=44s
+https://www.youtube.com/watch?v=YOlr79NaAtQ&t=6s
+https://www.youtube.com/watch?v=vKJpN5FAeF4
+https://www.youtube.com/watch?v=UgEaJBz3bjY
+https://www.youtube.com/watch?v=napDjGFjHR0
+https://www.youtube.com/watch?v=RvYYCGs45L4
+https://www.youtube.com/watch?v=vn3tm0quoqE
+https://www.youtube.com/watch?v=f0DrPLKf6Ro
+https://www.youtube.com/watch?v=7N63cMKosIE
+https://www.youtube.com/watch?v=qgRUr-YUk1Q
+
+
+
+
+/// live ///
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
+/// history ///
+https://www.youtube.com/watch?v=ShcR4Zfc6Dw
+
+
+/// GIT /// 
+https://www.youtube.com/watch?v=ecK3EnyGD8o
+
+
+https://www.youtube.com/watch?v=Sh6lK57Cuk4&t=12s
+
+https://www.youtube.com/watch?v=ifTF3ags0XI
+
+
+/// ???  Module Bundlers Explained ///
+https://www.youtube.com/watch?v=5IG4UmULyoA
+
+/// ??? Angular ///
+https://www.youtube.com/watch?v=7N63cMKosIE
+
+/// ??? TensorFlow.js - angular /// 
+https://www.youtube.com/watch?v=Y_XM3Bu-4yc 
+
+/// ??? Angular firebase ///
+https://www.youtube.com/watch?v=Y_XM3Bu-4yc
+
+/// Electron ///
+https://www.youtube.com/watch?v=3yqDxhR2XxE&t=582s
+
+
+https://www.youtube.com/watch?v=7UMuJMiNjSk
+
+https://www.youtube.com/watch?v=h33Srr5J9nY
+
+https://www.youtube.com/watch?v=DHvZLI7Db8E&t=133s
+
+https://www.youtube.com/watch?v=h33Srr5J9nY&list=RDCMUCFbNIlppjAuEX4znoulh0Cw&start_radio=1
+
+https://www.youtube.com/watch?v=AWeWihbC0YU
+

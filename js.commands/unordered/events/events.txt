@@ -1,0 +1,7 @@
+
+
+///---[example #1]----
+window.addEventListener('devicelight', function (event) {
+    console.log(event.value);
+
+

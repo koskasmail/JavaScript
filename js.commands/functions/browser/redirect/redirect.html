@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirect page</title>
+</head>
+<body">
+    <div>
+        <h3>[redirect] To View Screen Output Please open Browser Console (F12) </h3>
+    </div>
+    <div><button onclick="myFunction2()">Replace document</button></div>
+
+    <script>
+        function myFunction() {
+            //   location.replace("https://www.url.com");
+            console.log(" myFunction() ");
+            location.replace("https://github.com/");
+        }
+
+        function myFunction2() {
+            console.log("replace to another url");
+            location.replace("../browser-information/browser-information.html");
+        }
+// function onloadFunc() {
+//     location.replace("www.altavista.com");
+// }
+
+    </script>
+    </body>
+
+</html>

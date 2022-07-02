@@ -1,0 +1,39 @@
+body {
+    padding: 20px;
+    background: #1c2b34;
+  }
+  
+  #app {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .number {
+    width: 4em;
+  }
+  
+  .number__part {
+    fill: limegreen;
+    opacity: 0.03;
+    transition: opacity 500ms ease;
+  }
+  .number__part.is-active {
+    opacity: 1;
+  }
+  
+  .digital-clock {
+    justify-content: center;
+    display: flex;
+  }
+  .digital-clock div {
+    margin-right: 0.2em;
+  }
+  
+  .separator {
+    color: limegreen;
+    font-size: 4em;
+    align-self: center;
+  }

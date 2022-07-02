@@ -1,0 +1,100 @@
+
+
+{
+    "schoolName" : "My-School",
+    "city" : "Holon",
+    "year": "2021",
+    "active" : true,
+    "days" : [
+      {
+        "index": "index",
+        "day1" : "sunday",
+        "day2" : "monday",
+        "day3" : "tuesday",
+        "day4" : "wednesday",
+        "day5" : "thursday",
+        "day6" : "friday",
+        "day7" : "saturday"
+      },
+      {
+        "index": "00",
+        "day1" : "1",
+        "day2" : "2",
+        "day3" : "3",
+        "day4" : "4",
+        "day5" : "5",
+        "day6" : "6",
+        "day7" : "7"
+      },
+      {
+        "index": "01",
+        "day1" : "1",
+        "day2" : "2",
+        "day3" : "3",
+        "day4" : "4",
+        "day5" : "5",
+        "day6" : "6",
+        "day7" : "7"
+      },
+      {
+        "index": "02",
+        "day1" : "1",
+        "day2" : "2",
+        "day3" : "3",
+        "day4" : "4",
+        "day5" : "5",
+        "day6" : "6",
+        "day7" : "7"
+      },
+      {
+        "index": "03",
+        "day1" : "1",
+        "day2" : "2",
+        "day3" : "3",
+        "day4" : "4",
+        "day5" : "5",
+        "day6" : "6",
+        "day7" : "7"
+      },
+      {
+        "index": "04",
+        "day1" : "1",
+        "day2" : "2",
+        "day3" : "3",
+        "day4" : "4",
+        "day5" : "5",
+        "day6" : "6",
+        "day7" : "7"
+      },
+      {
+        "index": "05",
+        "day1" : "1",
+        "day2" : "2",
+        "day3" : "3",
+        "day4" : "4",
+        "day5" : "5",
+        "day6" : "6",
+        "day7" : "7"
+      },
+      {
+        "index": "06",
+        "day1" : "1",
+        "day2" : "2",
+        "day3" : "3",
+        "day4" : "4",
+        "day5" : "5",
+        "day6" : "6",
+        "day7" : "7"
+      },
+      {
+        "index": "07",
+        "day1" : "1",
+        "day2" : "2",
+        "day3" : "3",
+        "day4" : "4",
+        "day5" : "5",
+        "day6" : "6",
+        "day7" : "7"
+      }
+    ]
+  }

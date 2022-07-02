@@ -1,0 +1,51 @@
+.timer-module {
+  width: 60px;
+  height: 100px;
+  background: #eee;
+  display: inline-block;
+  margin-right: 10px;
+}
+.t-n {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px;
+  float: left;
+  border-radius: 5px;
+}
+span.column {
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  margin-right: 20px;
+}
+span.column:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: inherit;
+  position: absolute;
+  bottom: 12%;
+  border-radius: 2px;
+}
+span.column:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: inherit;
+  position: absolute;
+  top: 12%;
+  border-radius: 2px;
+}
+.timer-module-main {
+  position: relative;
+  height: 100px;
+}
+.blinker {
+  background: #4f2994;
+}

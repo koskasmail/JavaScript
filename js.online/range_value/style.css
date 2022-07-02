@@ -1,0 +1,188 @@
+*, ::before, ::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  --j: var(--js, 0) ;
+}
+
+.js {
+  --js: 1 ;
+}
+
+body, form {
+  display: grid;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.32) 0 0), url(/soft_leather_texture.jpg) 50%/cover, radial-gradient(at 0 0, #777, #000);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.32) 0 0), url(https://assets.codepen.io/2017/soft_leather_texture.jpg) 50%/cover, radial-gradient(at 0 0, #777, #000); */
+  background-blend-mode: luminosity;
+}
+
+form {
+  --range-w: calc(var(--max)*1em);
+  --track-w: calc(var(--range-w) + 1.75em);
+  --input-w: calc(var(--track-w) - 2*-1.875em);
+  --total-w: calc(var(--input-w) + 4*0.25em);
+  --filld-g: linear-gradient(red 0 0);
+  --arrow-g:
+  	conic-gradient(from 240deg at 100%,
+  			transparent,
+  			#000 3deg 57deg,
+  			transparent 60deg) 100%/ 50% no-repeat;
+  --pos: calc(var(--val)/var(--max)*var(--range-w));
+  grid-gap: 2.5em;
+  place-self: center;
+  margin-left: calc(var(--j)*-.5*(2.5em + 1.25em));
+  width: 4.5em;
+  height: var(--total-w);
+  border: solid 0.25em transparent;
+  border-radius: 2.25em;
+  background: linear-gradient(90deg, #171717, #0f0f0f 20%, #0a0a0a, #171717 80%, #363636) padding-box, linear-gradient(#0a0a0a, #2a2a2a) padding-box, linear-gradient(#252525, #2a2a2a) border-box;
+  background-blend-mode: screen, normal;
+  filter: sepia(var(--hl));
+  transition: filter 0.3s;
+}
+form:hover, form:focus-within {
+  --hl: 1 ;
+}
+form::before, form::after {
+  display: var(--js, none);
+  grid-area: 1/1;
+  place-self: end center;
+  z-index: 2;
+  border-radius: 50%;
+  transform: translatey(calc(-1*var(--pos)));
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  pointer-events: none;
+  content: "";
+}
+form::before {
+  margin: 0 -3.375em -1.25em;
+  width: 8.5em;
+  height: 8.5em;
+  padding: 1.5em;
+  background: conic-gradient(from 0.25turn, #4a4a4a, #404040, #4f4f4f, #3d3d3d, #a2a2a2, #f2f2f2, #fdfdfd, #9d9d9d, #e0e0e0);
+  --mask:
+  	var(--arrow-g),
+  	var(--filld-g) content-box ;
+}
+form::after {
+  margin: 0 -3.375em -0.75em;
+  width: 7.5em;
+  height: 7.5em;
+  border: solid 1.25em transparent;
+  padding: 0.25em;
+  box-shadow: inset 0 2px 1px -1px #eaeaea;
+  background: linear-gradient(rgba(255, 255, 255, 0.65) 0 0) content-box, radial-gradient(closest-side, #fff calc(100% - 0.125em), transparent calc(100% - 0.125em + 1px)) content-box, linear-gradient(#fff, #000) content-box, linear-gradient(#d2d2d2, #c2c2c2) border-box;
+  background-blend-mode: normal, difference;
+  --mask:
+  	var(--arrow-g) border-box,
+  	var(--filld-g) padding-box ;
+}
+
+[type=range] {
+  grid-area: 1/1;
+  place-self: center;
+  margin: 0 calc(.5*(4.5em + -1*var(--input-w)) + -0.25em);
+  width: var(--input-w);
+  transform: rotate(-90deg);
+  background: transparent;
+  cursor: pointer;
+}
+[type=range], [type=range]::-webkit-slider-runnable-track, [type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+[type=range]::-webkit-slider-container {
+  margin: 1.875em;
+  width: var(--track-w);
+  height: 1.75em;
+  border-radius: 0.875em;
+  background: linear-gradient(#0a0a0a, #060606);
+  -webkit-user-modify: read-write !important;
+}
+[type=range]::-webkit-slider-runnable-track {
+  margin: 0 -1.875em;
+  height: 100%;
+  filter: drop-shadow(-8px 0 5px rgba(0, 0, 0, 0.75)) drop-shadow(-2px 0 3px rgba(0, 0, 0, 0.75));
+}
+[type=range]::-moz-range-track {
+  margin: 1.875em;
+  width: var(--track-w);
+  height: 1.75em;
+  border-radius: 0.875em;
+  background: linear-gradient(#0a0a0a, #060606);
+}
+[type=range]::-webkit-slider-thumb {
+  margin-top: -1.875em;
+  box-sizing: border-box;
+  border: solid 0.1666666667em transparent;
+  padding: 0.25em;
+  width: 5.5em;
+  height: 5.5em;
+  border-radius: 50%;
+  box-shadow: inset -2px 0 1px #eaeaea;
+  opacity: calc(1 - var(--j));
+  background: linear-gradient(rgba(255, 255, 255, 0.65) 0 0) content-box, radial-gradient(closest-side, #fff calc(100% - 0.125em), transparent calc(100% - 0.125em + 1px)) content-box, linear-gradient(90deg, #000, #fff) content-box, linear-gradient(90deg, #c2c2c2, #d2d2d2) padding-box, linear-gradient(90deg, #4d4d4d, #fdfdfd) border-box;
+  background-blend-mode: normal, difference, normal;
+  cursor: ns-resize;
+}
+[type=range]::-moz-range-thumb {
+  box-sizing: border-box;
+  border: solid 0.1666666667em transparent;
+  padding: 0.25em;
+  width: 5.5em;
+  height: 5.5em;
+  border-radius: 50%;
+  box-shadow: inset -2px 0 1px #eaeaea;
+  opacity: calc(1 - var(--j));
+  background: linear-gradient(rgba(255, 255, 255, 0.65) 0 0) content-box, radial-gradient(closest-side, #fff calc(100% - 0.125em), transparent calc(100% - 0.125em + 1px)) content-box, linear-gradient(90deg, #000, #fff) content-box, linear-gradient(90deg, #c2c2c2, #d2d2d2) padding-box, linear-gradient(90deg, #4d4d4d, #fdfdfd) border-box;
+  background-blend-mode: normal, difference, normal;
+  cursor: ns-resize;
+}
+[type=range]:focus {
+  outline: none;
+}
+
+datalist {
+  display: var(--js, none);
+  grid-area: 1/2;
+  align-self: center;
+  position: relative;
+  width: 1.25em;
+  transform: rotatex(0.5turn);
+}
+datalist::after {
+  position: absolute;
+  right: calc(100% + 2.5em - 0.25em + 2.25em + -4.25em);
+  top: -4.125em;
+  padding: 4.25em;
+  transform: rotatex(0.5turn) translatey(calc(0.625em + -1*var(--pos)));
+  opacity: 0.85;
+  border-radius: 50%;
+  background: var(--arrow-g), radial-gradient(#000 2.75em, transparent 0);
+  filter: blur(4px);
+  pointer-events: none;
+  content: "";
+}
+
+option {
+  --hl: clamp(0, var(--val) - var(--idx) + 1, 1);
+  --not-hl: calc(1 - var(--hl));
+  min-height: 0.25em;
+  transform: inherit;
+  box-shadow: 0 calc(var(--not-hl)*1px) calc((1 + var(--hl))*1px) calc(var(--hl)*1px) hsl(0, 0%, calc(63% + var(--hl)*47%)), inset 0 1px 1px rgba(33, 33, 33, var(--not-hl)), inset 0 1px 2px rgba(54, 54, 54, var(--not-hl));
+  background: hsl(0, 0%, calc((1 + var(--hl))*50%));
+  filter: blur(calc(var(--hl)*1px));
+}
+option + option {
+  margin-top: 0.75em;
+}

@@ -1,0 +1,65 @@
+
+
+----[clock]------------
+
+https://codepen.io/maggiben/pen/AylDH
+
+https://codepen.io/YoannN2/pen/PqjJMR
+
+https://codepen.io/manifestinteractive/details/mVdveE
+
+https://codepen.io/JamesMGreene/pen/bENWaa
+
+https://codepen.io/hoanghien0410/details/MMPaqm
+
+https://codepen.io/jackharner/pen/jPmKGe
+
+https://codepen.io/ky0suke/pen/MyNXWX
+
+https://codepen.io/MananTank/pen/bGdOedL
+
+https://codepen.io/shshaw/pen/vKzoLL
+
+https://codepen.io/jasondavis/pen/vyMJPp
+
+https://codepen.io/rikschennink/pen/lyuaf
+
+https://codepen.io/mithicher/pen/ojdXBa
+
+https://codepen.io/dervondenbergen/pen/dVPOwB
+
+
+
+
+----[clock - analog]------------
+
+// clock analog with weather // *****
+https://codepen.io/mattjuggins/pen/WGRRYx
+
+// clock within clock
+https://codepen.io/RazvanDH/pen/ojLWOB
+
+
+----[clock - digital]------------
+
+https://codepen.io/eehayman/pen/jVPKpN
+
+https://codepen.io/mattlitzinger/pen/ysowF
+
+https://codepen.io/codifiedconcepts/pen/bwgxRq
+
+https://codepen.io/gau/pen/LjQwGp
+
+
+
+
+----[music editor]------------
+
+https://codepen.io/teropa/pen/JLjXGK
+
+// room
+https://codepen.io/arbaoui_mehdi/pen/yCjzm
+
+// dashboard
+https://codepen.io/sathishlxg/pen/OVyMwN
+

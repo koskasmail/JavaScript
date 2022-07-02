@@ -1,0 +1,74 @@
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+  
+  table {border-spacing: 8px 2px;}
+  td    {padding: 6px;}
+/* table { */
+  /* border-collapse: collapse; */
+  /* border-spacing: 20px; */
+  /* border-width: 1px; */
+  /* width: 100%; */
+/* } */
+
+/* tr { */
+  /* border-width: 1px; */
+  /* border-style: dashed;  */
+  /* border-color: black; */
+/* } */
+
+/* td {  */
+  /* padding: 10px; */
+/* } */
+
+  /* body {
+    width: 800px;
+    margin: 0 auto;
+  }
+   */
+
+
+  /* Keep this font*/
+  /* h1, h2 { */
+    /* font-family: 'Faster One', cursive; */
+  /* } */
+  
+
+
+  /* header styles */
+  
+  /*keep for example*/
+  /* h1 {
+    font-size: 4rem;
+    text-align: center;
+  } */
+  
+
+  /*keep for example*/
+  /* header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  } */
+  
+  /* section styles */
+  
+  /* section article { */
+    /* width: 100%; */
+    /* float: left; */
+  /* } */
+  
+  /* section p { */
+    /* margin: 5px 0; */
+  /* } */
+  
+  /* section ul { */
+    /* margin-top: 0; */
+  /* } */
+  
+  /* h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+  } */
+

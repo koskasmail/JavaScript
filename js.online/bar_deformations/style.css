@@ -1,0 +1,76 @@
+body {
+	box-sizing: border-box;
+	background: linear-gradient(#000000,#34343a);
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	filter: url(#goo);
+}
+.goo-defs {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin-right: 999vw;
+}
+.bar {
+	box-sizing: border-box;
+	position: relative;
+	width: 100px;
+	height: 21px;
+	background: linear-gradient(to right,#0dd8cb,#0d90d8);
+	margin: 10px;
+	animation: breathe 600ms ease infinite alternate;
+}
+.bar:after, .bar:before {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 0px;
+	background: linear-gradient(to right, #0d97d6,#0d90d8);
+	animation: drop 1200ms ease-out infinite;
+}
+.bar:before {
+	right: unset;
+	left: -50px;
+	background: linear-gradient(to right, #0dd8cb,#0dcecd);
+	animation: drop 1200ms ease-out reverse infinite;
+}
+@keyframes drop {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(50px, 0);
+	}
+}
+@keyframes breathe {
+	0% {
+		transform: scale(1, 1);
+	}
+	100% {
+		transform: scale(1, 0.9);
+	}
+}
+.bar:nth-of-type(2):after,
+.bar:nth-of-type(2):before {
+	animation-delay: 200ms;
+}
+.bar:nth-of-type(3):after,
+.bar:nth-of-type(3):before {
+	animation-delay: 400ms;
+}
+.bar:nth-of-type(4):after,
+.bar:nth-of-type(4):before {
+	animation-delay: 600ms;
+}
+.bar:nth-of-type(5):after,
+.bar:nth-of-type(5):before {
+	animation-delay: 800ms;
+}

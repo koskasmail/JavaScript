@@ -1,0 +1,55 @@
+
+/*
+**  DOT
+*/
+ 
+  /* : :  - space (inline-block)*/
+  span.column {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* : :  (up dot) */
+  span.column:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: inherit;
+    position: absolute;
+    bottom: 12%;
+    border-radius: 2px;
+  }
+  
+  /* : :  (down dot) */
+  span.column:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: inherit;
+    position: absolute;
+    top: 12%;
+    border-radius: 2px;
+  }
+  
+  /* : :  (up & down dot --> separated ) */
+  .timer-module-main {
+    position: relative;
+    height: 100px;
+  }
+  
+  /* : :  (dots - blink) */
+  .blinker {
+    background: #4f2994;
+  }
+  
+  
+  /*
+  *************************************************************
+  */
+  
+  
+  

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events CheckBox</title>
+</head>
+<body onload="on_load()">
+    <div>
+        <span><input type="checkbox" name="yesNo" id="yesNo"><lable fpr="yes"> Yes</lable></span>
+        <span id="output">__</span>
+    </div>
+
+    <script>
+        output = document.getElementById("output");
+        const yesNo = document.querySelector("input[name=yesNo]");
+        yesNo.addEventListener("change",(e) => {
+            if(e.target.checked) {
+                output.innerHTML = "checked";
+                console.log("checked");
+            }
+            else {
+                output.innerHTML = "Not checked";
+                console.log("Not checked");
+            }
+        });
+
+        function on_load() {
+            console.log("test");
+            output.innerHTML = "-----------";
+        }
+    </script>
+</body>
+</html>

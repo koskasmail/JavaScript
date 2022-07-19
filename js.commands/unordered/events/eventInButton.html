@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventInButton</title>
+</head>
+
+<body onload="on_load()" onunload="on_unload">
+    <div>
+        <h1>Event In Button</h1>
+        <button onclick="this.innerHTML=Date()"> Click To View Current Time</button>
+        <div>
+            <button onclick="document.getElementById('out1').innerHTML=Date()"> onclick --> getElementById --> Time </button>
+            <span id="out1">__</span>
+        </div>
+        <div>
+            <button onclick="showTime()"> onclick --> function --> Time  </button>
+            <span id="out2">__</span>
+        </div>
+
+
+
+        <script>
+            function on_load() {
+                document.getElementById('out1').innerHTML="on_load --> out1 --> ";
+                document.getElementById('out2').innerHTML="on_load --> out2 --> ";
+            }
+
+            function on_unload() {
+                document.getElementById('out1').innerHTML="on_unload --> out1 --> ";
+                document.getElementById('out2').innerHTML="on_unload --> out2 --> ";
+            }
+            function showTime() {
+                document.getElementById('out2').innerHTML = Date();
+            }
+        </script>
+    </div>
+</body>
+
+</html>

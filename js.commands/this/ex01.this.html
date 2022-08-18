@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+
+<body>
+    <script>
+        const video = {
+            title: 'video_title',
+            play() {
+                console.table(this);
+                console.log(this);
+            }
+        };
+
+        video.stop = function () {
+            console.table(this);
+            console.log(this);
+        };
+
+        function playVideo() {
+            console.log(this);
+        }
+
+        ///---[constructor]------------///
+        function VideoConstructor(title) {
+            this.title = title;
+            console.log(this);
+        }
+
+
+        const video2 = {
+            title: 'title2',
+            tags: ['a', 'b', 'c'],
+            showTags() {
+                console.log('print tag array >>> ')
+                this.tags.forEach(function (tag) {
+                    console.log(tag);
+                    /// console.log(this.title, tag); /// this.title=undefine
+                });
+            }
+        };
+
+        const video3 = {
+            title: 'title3',
+            tags: ['a', 'b', 'c'],
+            showTags() {
+                console.log('print tag array >>> ')
+                this.tags.forEach(function (tag) {
+                    console.log(this, tag);
+                }, { firstName: 'j' });
+            }
+        };
+
+        const video4 = {
+            title: 'title4',
+            tags: ['a', 'b', 'c'],
+            showTags() {
+                console.log('print tag array >>> ')
+                this.tags.forEach(function (tag) {
+                    console.log(this, tag);
+                }, this);
+            }
+        };
+
+        const video5 = {
+            title: 'title5',
+            tags: ['a', 'b', 'c'],
+            showTags() {
+                console.log('print tag array >>> ')
+                this.tags.forEach(function (tag) {
+                    console.log(this.title, tag);
+                }, this);
+            }
+        };
+
+        //video.play(); /// object
+        //video.stop(); ///object
+        //playVideo(); ///window
+        //const vcr =  new VideoConstructor('title_a'); /// new {}
+
+        //video2.showTags();
+
+        //video2.showTags();
+
+        //video3.showTags();
+
+        //video4.showTags();
+
+        video5.showTags();
+    </script>
+</body>
+
+</html>

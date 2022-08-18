@@ -1,0 +1,16 @@
+
+
+----[This]------------
+
+The "object" that is executing the current function.
+
+method is a function that is a part of an object 
+this reference the object itself
+
+function alone (no part of an object)
+this reference the global object 
+browser : this = window
+nodejs : this = global
+
+
+------------------------

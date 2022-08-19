@@ -1,9 +1,9 @@
+/***
+ * js.jquery
+ * created: __/__/____
+ * updated: __/__/____
+ */
 
-
-/** 
- * java script jquery 
- **/
- 
 var min = 0,
     max = 23;
 

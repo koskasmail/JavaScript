@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <div>Number available: <span id="numbers"></span></div>
+    <div>Smallest number is: <u><span id="output"></span></u></div>
+
+    <script>
+    let nums = [5,10,77,20,99,44];
+    let print_min = 0;
+
+        function find_min(nums) {
+            let min_num = Number.POSITIVE_INFINITY;
+            console.error(min_num);
+            for(let num of nums) {
+                if (num < min_num) {
+                    min_num = num;
+                }
+            }
+            return min_num;
+        }
+
+    document.getElementById('numbers').textContent = nums;
+    print_min = find_min(nums);
+    document.getElementById('output').textContent = print_min;
+
+    </script>
+</body>
+</html>
+

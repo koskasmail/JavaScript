@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <div>Number available: <span id="numbers"></span></div>
+    <div>Biggest number is: <u><span id="output"></span></u></div>
+
+    <script>
+    let nums = [4,10,77,20,3,44];
+    let print_max = 0;
+
+        function find_max(nums) {
+            let max_num = Number.NEGATIVE_INFINITY;
+            console.error(max_num);
+            for(let num of nums) {
+                if (num > max_num) {
+                    max_num = num;
+                }
+            }
+            return max_num;
+        }
+
+    document.getElementById('numbers').textContent = nums;
+    print_max = find_max(nums);
+    document.getElementById('output').textContent = print_max;
+
+    </script>
+</body>
+</html>
+

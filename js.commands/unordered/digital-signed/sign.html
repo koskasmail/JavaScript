@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PactMaker</title>
+<link href="./assets/styles.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+  <h1>PactMaker</h1>
+</header>
+
+  <div class="container">
+    <p class="intro">Fill out this form to sign the example agreement. PactMaker automatically generates an example agreement <a href="/example.pdf" target="_blank">here</a>.</p>
+
+    <form action="/sign" method="POST">
+
+
+      <div class="form-row">
+        <div class="form-label">
+          <label>Sign your name</label>
+        </div>
+        <div class="form-field">
+          <button class="js-sig-reset sig-reset hidden"></button>
+          <canvas class="js-sig-canvas sig" width="444" height="125"></canvas>
+          <input type="hidden" class="js-sig" name="signature">
+        </div>
+      </div>
+
+      <div class="form-submit">
+        <input class="c-submit js-submit" type="submit" value="Sign Agreement" disabled>
+      </div>
+    </form>
+  </div>
+
+  <footer>&copy; PactMaker</footer>
+
+<script src="./assets/lib/signature-pad.js"></script>
+<script src="./assets/form.js"></script>
+
+</body>
+</html>

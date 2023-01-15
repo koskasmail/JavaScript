@@ -1,0 +1,93 @@
+
+
+        var num1 = 10;
+        var num2 = 20;
+        var num3 = "total";
+        var num4 = 8;
+
+        var numDecimal_1 = 4.2;
+        var numDecimal_2 = 2.1;
+
+        var stTeamName = " developer ";
+        var stTeamNickName = " TheATeam ";
+
+        
+        //console.log(" num3 is a :: " + typeof(num3)); //temp
+        console.warn('arithmetic operators');
+        console.log(`${num1} + ${num2} = ${num1 + num2} `);
+        console.log(`${num2} - ${num1} = ${num2 - num1} `);
+        console.log(`${num2} * ${num1} = ${num2 * num1} `);
+        console.log(`${num2} / ${num1} = ${num2 / num1} `);
+        console.log(`${num2} % ${num4} = ${num2 % num4} `);
+        console.log('');
+       
+        console.warn('Increment / decrement  Operators');
+        console.log("num1 == " + num1);
+        num1++;
+        console.log("num1++ == " + num1);
+        num1--;
+        console.log("num1-- == " + num1);
+        // console.log("num1++ == " + num1++ + " ::: ++num2 == " + ++num2);
+        // console.log("num1++ == " + num1++ + " ::: ++num2 == " + ++num2);
+
+        console.log('');
+        console.warn('Decimal - assignment operators');
+        console.log(`${numDecimal_1} + ${numDecimal_2} = ${numDecimal_1 + numDecimal_2} `);
+        console.log(`${numDecimal_1} - ${numDecimal_2} = ${numDecimal_1 - numDecimal_2} `);
+        console.log(`${numDecimal_1} * ${numDecimal_2} = ${numDecimal_1 * numDecimal_2} `);
+        console.log(`${numDecimal_1} / ${numDecimal_2} = ${numDecimal_1 / numDecimal_2} `);
+        console.log(`${numDecimal_1} % ${numDecimal_2} = ${numDecimal_1 % numDecimal_2} `);
+        console.log(`${numDecimal_1 + 1} % ${numDecimal_2} = ${(numDecimal_1 + 1) % numDecimal_2} `);
+
+        console.log('');
+        console.log(`num1 = ${num1}`);
+        console.log(`${num1} + 2 = ${num1 = num1 + 2} `);
+        console.log(`num1 = ${num1}`);
+        console.log(`${num1} + 2 = ${num1 += 2} `);
+        console.log(`num1 = ${num1}`);
+        
+        console.log('*****');
+
+   
+        console.log('');
+        console.warn('assignment operators');
+        console.log(`num1 -= 2 == ${num1 -= 2} `);
+        console.log(`* num1 = ${num1}`);
+        console.log(`num1 *= 2 ==  ${num1 *= 2} `);
+        console.log(`** num1 = ${num1}`);
+        console.log(`num1 /= 2 ==  ${num1 /= 2} `);
+        console.log(`*** num1 = ${num1}`);
+        console.log(`num1 %= 2 ==  ${num1 %= 2} `);
+        console.log(`****num1 = ${num1}`);
+
+
+        console.log('');
+        console.warn("Concatenation");
+        console.log("TeamName === " + stTeamName);
+        console.log("stTeamNickName === " + stTeamNickName);
+        console.log("TeamName + stTeamNickName === " + stTeamName + stTeamNickName); //Concatenation
+        /***
+         * 
+         *  Concatenation
+         * 
+         */
+        let stConcatenationOne = " this is the first ";
+        let stConcatenationTwo = " this is the second ";
+        let stTotalConcatenation = stConcatenationOne + " :: " + stConcatenationTwo;
+        console.warn("Concatenation");
+        console.log("Concatenation example #1 \n" + stTotalConcatenation);
+        console.log("Concatenation example #2 \n" + (stConcatenationOne += stConcatenationTwo));
+        console.log(" escaped characters \' \" \\ \t ==tab \n ==new_line \r ==carriage_return "
+            + " \b ==backspace \f ==form_feed \' \"\" ==> in console mode");
+
+        let test = 2;
+        console.warn("Prefix & Postfix")
+        console.log("test == " + test);
+
+        console.warn("Prefix")
+        console.log("++test == " + ++test);
+        console.log("--test == " + --test);
+
+        console.warn("Postfix")
+        console.log("test++ == " + test++);
+        console.log("test-- == " + test--);

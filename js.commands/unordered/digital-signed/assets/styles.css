@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500');
+
+body {
+  font-family: 'Rubik', Helvetica, sans-serif;
+  background-color: #f5f8ff;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 3em 0 2em;
+  text-align: center;
+  font-size: 20px;
+  color: #a6b4d2;
+  font-weight: 500;
+}
+h2 {
+  margin: 0 0 .5em;
+}
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+footer {
+  margin: 1em 0 2em;
+  text-align: center;
+  color: #a6adbb;
+}
+
+.container {
+  background-color: #FFF;
+  border-radius: 5px;
+  margin: 2em auto;
+  width: 550px;
+  padding: 50px;
+  border: 2px solid rgba(166, 173, 188, 0.35);
+}
+
+/* Form */
+.form-row {
+  margin-bottom: 2em;
+}
+.form-label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.form-field {
+  position: relative;
+}
+.form-comment {
+  color: #999;
+  font-size: 14px;
+}
+.c-select {
+  width: 100%;
+  font-size: 16px;
+  height: 56px;
+}
+.c-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #DDD;
+}
+.c-input:focus {
+  outline: none;
+  border-color: #8d90ff;
+}
+.c-submit {
+  padding: 20px 35px;
+  font-size: 16px;
+  background-color: #3bd07d;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  font-weight: bold;
+  width: 100%;
+}
+.c-submit:disabled {
+  opacity: .3;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Signature field */
+.sig {
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="font-size:16px"><text y="16">✏️</text></svg>'), auto;
+}
+
+.sig-reset {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, .12);
+  height: 26px;
+  width: 26px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.sig-reset:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sig-reset::before {
+  content: '×';
+  color: #FFF;
+  font-size: 20px;
+  line-height: .7;
+  text-align: center;
+}
+
+.intro {
+  margin: 0 0 2em;
+}

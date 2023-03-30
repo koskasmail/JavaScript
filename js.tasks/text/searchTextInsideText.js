@@ -1,24 +1,27 @@
+/* ----[search Text Inside Text]------------*
+*  * Check if "text" variable contain the text from 'searchFor' variable.
+*/
+ 
 var text = 'Hello.pdf';
 var searchFor = '.pdf';
 
-function fnPrintResult(documentName, extension, extensionLength) {
-    console.log('----[output]----------------');
-    console.log('documentName: ' + documentName);
-    console.log('extension: ' + extension);
-    console.log('extensionLength: ' + extensionLength);
-    console.log('----------------------------');
-}
+console.log('Contain value::: ' +  fnCheckString(text , searchFor) );
 
-function fnCheckString(documentName, extension) {
+function fnCheckString(documentName, searchForText) {
+    var searchForTextLength = searchForText.length;
 
-    var extensionLength = extension.length;
+    fnPrintResult(documentName, searchForText, searchForTextLength);
 
-    fnPrintResult(documentName, extension, extensionLength);
-
-    if ( documentName.substr(extensionLength + 1) === extension) 
+    if ( documentName.substr(searchForTextLength + 1) === searchForText) 
         return true;
 
     return false;
 }
 
-console.log('Contain value::: ' +  fnCheckString(text , searchFor) );
+function fnPrintResult(documentName, searchForText, searchForTextLength) {
+    console.log('----[output]----------------');
+    console.log('document Name: ' + documentName);
+    console.log('search For Text: ' + searchForText);
+    console.log('search For Text Length: ' + searchForTextLength);
+    console.log('----------------------------');
+}

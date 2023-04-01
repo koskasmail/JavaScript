@@ -1,6 +1,8 @@
 
 debugger;
 let count = 0;
+let min = 0;
+let max = 10;
 
 let countDisplay = document.getElementById('count_display').innerHTML = count;
 let count_minus = document.getElementById('count_minus');
@@ -15,13 +17,15 @@ count_plus.onclick = plus;
 
 
 function plus() {
-    count++;
-    updateDispay(countDisplay);
+    if (count < max )
+        count++;
+    updateDispay();
 }
 
 function minus() {
-    count--;
-    updateDispay(countDisplay);
+    if (count > min)
+        count--;
+    updateDispay();
 }
 
 function updateDispay() {

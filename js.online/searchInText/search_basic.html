@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Fields and One Button</title>
+	<style>
+		/* Style for input fields */
+		input[type=text] {
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+
+		/* Style for button */
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+            padding-left: 55%;
+            /* padding-right: 30px; */
+            /* align-items: center; */
+            /* align-self: center; */
+            /* align-content: center; */
+            /* align-tracks: center; */
+            /* text-align: center; */
+		}
+		
+		/* Style for container */
+		.container {
+			margin: auto;
+			width: 30%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<label for="field1">Field 1:</label>
+		<input type="text" id="field1" name="field1"><br>
+
+		<label for="field2">Field 2:</label>
+		<input type="text" id="field2" name="field2"><br>
+
+        <br/>
+		<button id="sub" type="submit">Submit</button>
+	</div>
+
+    <script>
+        var sub = document.getElementById("sub");
+
+        sub.addEventListener("click", function() {
+			alert("Button clicked!");
+		});
+
+    </script>
+</body>
+</html>

@@ -4,5 +4,5 @@
 
 < : >  ==>  colon
 < ; >  ==>  semicolon
-
+< . >  ==>  dot
 

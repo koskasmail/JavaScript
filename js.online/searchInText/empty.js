@@ -1,27 +1,27 @@
-function checkEmpty(field1, field2) {
+function checkEmpty(A, B) {
   var msg1 = "";
   var msg2 = "";
   
-  if (field1.trim() === "") {
+  if (A.trim() === "") {
     console.log("Input is empty.");
-    msg1 = "field1:::Empty";
+    msg1 = "A:::Empty";
   } else {
     console.log("Input is not empty.");
-    msg1 = " field1:::" + field1;
+    msg1 = " A:::" + A;
   }
 
-  if (field2.trim() === "") {
+  if (B.trim() === "") {
     console.log("Input is empty");
-    msg2 = "field2:::Empty.";
+    msg2 = "B:::Empty.";
   } else {
     console.log("Input is not empty.");
-    msg2 = " field2:::" + field2;
+    msg2 = " B:::" + B;
   }
   return msg1 + "....." + msg2;
 }
 
-function checkAllEmpty(field1, field2, output) {
-  if ((field1.trim() === "") || (field2.trim() === "")) {
+function checkAllEmpty(A, B, output) {
+  if ((A.trim() === "") || (B.trim() === "")) {
     console.log("Input is empty.");
     output.innerText = "Input is empty.";
     return false;

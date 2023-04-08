@@ -1,32 +1,32 @@
-function isNumber(field1, field2) {
+function isNumber(A, B) {
 
     var msg1 = "";
     var msg2 = "";
   
-    console.log(`field1 ${field1} :::: field1 ${field1}`);
-    if (typeof field1 === "number" || (!isNaN(field1) && !isNaN(parseFloat(field1)))) {
-      console.log("field1 is a Number");
-      msg1 = "field1 is a Number";
+    console.log(`A ${A} :::: B ${B}`);
+    if (typeof A === "number" || (!isNaN(A) && !isNaN(parseFloat(A)))) {
+      console.log("A is a Number");
+      msg1 = "A is a Number";
     }
     else {
-      console.log("field1 is not a Number");
-      msg1 = "field1 is not a Number";
+      console.log("A is not a Number");
+      msg1 = "A is not a Number";
     }
     
-    if (typeof field2 === "number" || (!isNaN(field2) && !isNaN(parseFloat(field2)))) {
-      console.log("field2 is a Number");
-      msg2 = "field2 is a Number";
+    if (typeof B === "number" || (!isNaN(B) && !isNaN(parseFloat(B)))) {
+      console.log("B is a Number");
+      msg2 = "B is a Number";
     }
     else {
-      console.log("field2 is not a Number");
-      msg2 = "field2 is not a Number";
+      console.log("B is not a Number");
+      msg2 = "B is not a Number";
     }
   
     return msg1 + "....." + msg2;
   }
   
-  function isNumber2(field1, output) {
-    if (/^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$/.test(field1) ) {
+  function isNumber2(A, output) {
+    if (/^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$/.test(A) ) {
       console.log("isnum ==> true");
       output.innerText = "isnum ==> true";
       return true;

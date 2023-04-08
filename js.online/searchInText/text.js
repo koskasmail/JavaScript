@@ -1,26 +1,26 @@
-function isText(field1, field2) {
+function isText(A, B, output) {
 
     var msg1 = "";
     var msg2 = "";
   
-    console.log(`field1 ${field1} :::: field1 ${field1}`);
-    if (typeof field1 === "string") {
-      console.log("field1 is a Text");
-      msg1 = "field1 is a Text.";
+    console.log(`A ${A} :::: B ${B}`);
+    if (typeof A === "string") {
+      console.log("A is a Text");
+      msg1 = "A is a Text.";
     }
     else {
-      console.log("field1 is not a Text");
-      msg1 = "field1 is not a Text.";
+      console.log("A is not a Text");
+      msg1 = "A is not a Text.";
     }
     
-    if (typeof field2 === "string") {
-      console.log("field2 is a Text");
-      msg2 = "field2 is a Text";
+    if (typeof B === "string") {
+      console.log("B is a Text");
+      msg2 = "B is a Text";
     }
     else {
-      console.log("field2 is not a Text");
-      msg2 = "field2 is not a Text";
+      console.log("B is not a Text");
+      msg2 = "B is not a Text";
     }
   
-    return msg1 + "....." + msg2;
+    output.innerText = msg1 + "....." + msg2;
   }

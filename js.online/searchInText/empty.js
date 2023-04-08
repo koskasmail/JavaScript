@@ -1,6 +1,7 @@
 function checkEmpty(field1, field2) {
   var msg1 = "";
   var msg2 = "";
+  
   if (field1.trim() === "") {
     console.log("Input is empty.");
     msg1 = "field1:::Empty";

@@ -6,11 +6,11 @@ function isText(field1, field2) {
     console.log(`field1 ${field1} :::: field1 ${field1}`);
     if (typeof field1 === "string") {
       console.log("field1 is a Text");
-      msg1 = "field1 is a Text";
+      msg1 = "field1 is a Text.";
     }
     else {
       console.log("field1 is not a Text");
-      msg1 = "field1 is not a Text";
+      msg1 = "field1 is not a Text.";
     }
     
     if (typeof field2 === "string") {

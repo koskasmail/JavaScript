@@ -2,6 +2,7 @@ var field1 = document.getElementById("field1");
 var field2 = document.getElementById("field2");
 var empty = document.getElementById("empty");
 var num = document.getElementById("num");
+var text = document.getElementById("text");
 var soutput = document.getElementById("output");
 
 soutput.innerText = "............";
@@ -20,4 +21,10 @@ num.addEventListener("click", function () {
   soutput.innerText = isNumber(field1.value, field2.value);
 
   isNumber2(field1.value, soutput);
+});
+
+text.addEventListener("click", function () {
+  console.log("is text ");
+  soutput.innerText = "is text";
+  soutput.innerText = isText(field1.value, field2.value);
 });

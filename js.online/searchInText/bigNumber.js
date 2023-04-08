@@ -26,8 +26,8 @@ function isBig(field1, field2, output) {
       }
     }
     else {
-      console.log("field1 is not a Number");
-      msg1 = "field1 is not a Number";
+      console.log("A/B is not a Number");
+      msg1 = "A/B is not a Number";
       output.innerText = msg1;
     }
   }

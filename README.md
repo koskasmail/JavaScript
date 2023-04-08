@@ -3,5 +3,5 @@ JavaScript - learn, try, test.
 
     [x] js
     [x] commands
-    [X] online
-    [X] task
+    [x] online
+    [x] task

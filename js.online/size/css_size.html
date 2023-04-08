@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel to Em/Rem Converter</title>
+    <!-- <style>
+        .converter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .input-field {
+            margin-right: 10px;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="converter">
+        <div class="input-field">
+            <label for="pxInput">Pixels (px): </label>
+            <input type="number" id="pxInput" step="any">
+        </div>
+        <div class="input-field">
+            <label for="emOutput">Em: </label>
+            <input type="text" id="emOutput" readonly>
+        </div>
+        <div class="input-field">
+            <label for="remOutput">Rem: </label>
+            <input type="text" id="remOutput" readonly>
+        </div>
+    </div>
+    <script>
+        document.getElementById("pxInput").addEventListener("input", function() {
+            var pxValue = parseFloat(this.value);
+            var emValue = pxValue / 16; // 1em = 16px
+            var remValue = pxValue / parseFloat(getComputedStyle(document.documentElement).fontSize); // 1rem = font-size of root element
+
+            document.getElementById("emOutput").value = emValue.toFixed(2) + "em";
+            document.getElementById("remOutput").value = remValue.toFixed(2) + "rem";
+        });
+    </script>
+</body>
+</html>

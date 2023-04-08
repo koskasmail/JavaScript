@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Temperature Converter</title>
-    <script>
-        function convertCelsiusToFahrenheit() {
-            var celsius = parseFloat(document.getElementById("celsius").value);
-            var fahrenheit = (celsius * 9/5) + 32;
-            document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
-        }
-
-        function convertCelsiusToKelvin() {
-            var celsius = parseFloat(document.getElementById("celsius").value);
-            var kelvin = celsius + 273.15;
-            document.getElementById("kelvin").value = kelvin.toFixed(2);
-        }
-    </script>
+    <link rel="stylesheet" href="c2f2k.css">
 </head>
+
 <body>
-    <h1>Temperature Converter</h1>
-    <label for="celsius">Celsius: </label>
-    <input type="number" id="celsius" oninput="convertCelsiusToFahrenheit(); convertCelsiusToKelvin();">
-    <br><br>
-    <label for="fahrenheit">Fahrenheit: </label>
-    <input type="text" id="fahrenheit" readonly>
-    <br><br>
-    <label for="kelvin">Kelvin: </label>
-    <input type="text" id="kelvin" readonly>
+
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <label for="celsius">Celsius: </label>
+        <input type="number" id="celsius" min=0 oninput="convertCelsiusToFahrenheit(); convertCelsiusToKelvin();"> 
+        <label for="celsius" class="symbol"> C </label>
+        <br><br>
+        <label for="fahrenheit">Fahrenheit: </label>
+        <input type="text" id="fahrenheit" readonly>
+        <label for="fahrenheit" class="symbol"> F </label>
+        <br><br>
+        <label for="kelvin">Kelvin: </label>
+        <input type="text" id="kelvin" readonly>
+        <label for="kelvin" class="symbol"> K </label>
+    </div>
+
+    <script src="c2f2k.js" defer></script>
 </body>
+
 </html>

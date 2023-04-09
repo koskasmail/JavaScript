@@ -1,0 +1,18 @@
+[
+    {
+      "question": "What is the capital of France?",
+      "choices": ["Paris", "Berlin", "London", "Madrid"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which is the largest ocean in the world?",
+      "choices": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "choices": ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Michelangelo"],
+      "correctAnswer": 2
+    }
+  ]
+  

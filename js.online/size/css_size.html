@@ -2,21 +2,10 @@
 <html>
 <head>
     <title>Pixel to Em/Rem Converter</title>
-    <!-- <style>
-        .converter {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .input-field {
-            margin-right: 10px;
-        }
-    </style> -->
+    <link rel="stylesheet" href="css_size.css">
 </head>
 <body>
-    <div class="converter">
+    <div class="container">
         <div class="input-field">
             <label for="pxInput">Pixels (px): </label>
             <input type="number" id="pxInput" step="any">
@@ -30,15 +19,7 @@
             <input type="text" id="remOutput" readonly>
         </div>
     </div>
-    <script>
-        document.getElementById("pxInput").addEventListener("input", function() {
-            var pxValue = parseFloat(this.value);
-            var emValue = pxValue / 16; // 1em = 16px
-            var remValue = pxValue / parseFloat(getComputedStyle(document.documentElement).fontSize); // 1rem = font-size of root element
 
-            document.getElementById("emOutput").value = emValue.toFixed(2) + "em";
-            document.getElementById("remOutput").value = remValue.toFixed(2) + "rem";
-        });
-    </script>
+    <script src="css_size.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="english_4.css">
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myController">
+      <input type="text" ng-model="searchText" placeholder="Search...">  
+      <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="words in data | filter:searchText" >
+              <td>{{words.enWord}}</td>
+              <td>{{words.heWord}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>      
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" defer></script>
+      <script src="english_4.js" defer></script>
+</body>
+</html>

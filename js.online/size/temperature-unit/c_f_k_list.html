@@ -1,7 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Temperature Converter</title>
+
+    <style>
+
+        .title {
+            font-size: 26px;
+        }
+
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        input[type=number] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        input[type=text] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        label {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+
     <script>
         function convertTemperature() {
             var inputUnit = document.getElementById("inputUnit").value;
@@ -11,7 +60,7 @@
 
             if (inputUnit === "celsius") {
                 if (outputUnit === "fahrenheit") {
-                    convertedTemperature = (inputTemperature * 9/5) + 32;
+                    convertedTemperature = (inputTemperature * 9 / 5) + 32;
                 } else if (outputUnit === "kelvin") {
                     convertedTemperature = inputTemperature + 273.15;
                 } else {
@@ -19,9 +68,9 @@
                 }
             } else if (inputUnit === "fahrenheit") {
                 if (outputUnit === "celsius") {
-                    convertedTemperature = (inputTemperature - 32) * 5/9;
+                    convertedTemperature = (inputTemperature - 32) * 5 / 9;
                 } else if (outputUnit === "kelvin") {
-                    convertedTemperature = (inputTemperature - 32) * 5/9 + 273.15;
+                    convertedTemperature = (inputTemperature - 32) * 5 / 9 + 273.15;
                 } else {
                     convertedTemperature = inputTemperature; // No conversion needed
                 }
@@ -29,7 +78,7 @@
                 if (outputUnit === "celsius") {
                     convertedTemperature = inputTemperature - 273.15;
                 } else if (outputUnit === "fahrenheit") {
-                    convertedTemperature = (inputTemperature - 273.15) * 9/5 + 32;
+                    convertedTemperature = (inputTemperature - 273.15) * 9 / 5 + 32;
                 } else {
                     convertedTemperature = inputTemperature; // No conversion needed
                 }
@@ -39,28 +88,31 @@
         }
     </script>
 </head>
+
 <body>
-    <h1>Temperature Converter</h1>
-    <label for="inputUnit">Input Unit: </label>
+    <div class="title">Temperature Converter</div> <br/>
+    <hr> <br/>
+    <label for="inputUnit">Input Unit: </label> <br />
     <select id="inputUnit">
         <option value="celsius">Celsius</option>
         <option value="fahrenheit">Fahrenheit</option>
         <option value="kelvin">Kelvin</option>
     </select>
     <br><br>
-    <label for="inputTemperature">Input Temperature: </label>
+    <label for="inputTemperature">Input Temperature: </label><br />
     <input type="number" id="inputTemperature" step="any">
     <br><br>
-    <label for="outputUnit">Output Unit: </label>
+    <label for="outputUnit">Output Unit: </label><br />
     <select id="outputUnit">
         <option value="celsius">Celsius</option>
         <option value="fahrenheit">Fahrenheit</option>
         <option value="kelvin">Kelvin</option>
     </select>
     <br><br>
-    <label for="outputTemperature">Converted Temperature: </label>
+    <label for="outputTemperature">Converted Temperature: </label><br />
     <input type="text" id="outputTemperature" readonly>
     <br><br>
     <button onclick="convertTemperature()">Convert</button>
 </body>
+
 </html>

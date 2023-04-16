@@ -18,6 +18,7 @@ const person = {
   // Set an object property using a setter:
   person.lang = "english";
   
-  console.log(person.lang); //?
-  console.log(person.language); //?
-  console.log(person); //?
+  console.log(`person.lang::: ${person.lang}`); //?
+  console.log(`person.language::: ${person.language}`); //?
+  console.log(`person:::`); //?
+  console.log(person);

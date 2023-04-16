@@ -2,13 +2,45 @@
 #count_minus {
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Courier New', monospace;
-    font-size: 24px;
+    font-size: 34px;
     padding: 3px 6px;
+}
+
+#count_display {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    /* padding: 3px 6px; */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #count_plus {
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Courier New', monospace;
-    font-size: 24px;
+    font-size: 34px;
     padding: 3px 6px;
+}
+
+
+/* Style for button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 32px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 5%;
+}
+
+/* Style for container */
+.container {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    text-align: center;
 }

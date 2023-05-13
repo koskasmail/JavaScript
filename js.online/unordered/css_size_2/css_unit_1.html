@@ -1,0 +1,105 @@
+body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 50vw;
+    height: 50vw;<!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        body {
+          font-size: 16px;
+        }
+    
+        .container {
+          width: 50vw;
+          height: 50vw;
+          background-color: #f0f0f0;
+          margin: 0 auto;
+          text-align: center;
+        }
+    
+        .box {
+          width: 10rem;
+          height: 10rem;
+          background-color: #ff0000;
+          margin: 2em;
+          display: inline-block;
+          font-size: 1em;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+      </div>
+    
+      <script>
+        // Function to convert pixels (px) to em
+        function pxToEm(pxValue) {
+          var fontSize = parseFloat(getComputedStyle(document.body).fontSize);
+          return pxValue / fontSize;
+        }
+    
+        // Function to convert pixels (px) to rem
+        function pxToRem(pxValue) {
+          var rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+          return pxValue / rootFontSize;
+        }
+    
+        // Function to convert pixels (px) to viewport width (vw)
+        function pxToVw(pxValue) {
+          var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+          return (pxValue / viewportWidth) * 100;
+        }
+    
+        // Function to convert pixels (px) to percent (%)
+        function pxToPercent(pxValue, containerWidth) {
+          return (pxValue / containerWidth) * 100;
+        }
+    
+        // Usage example
+        var box1 = document.querySelector('.box:nth-of-type(1)');
+        var box2 = document.querySelector('.box:nth-of-type(2)');
+        var containerWidth = document.querySelector('.container').offsetWidth;
+    
+        var box1WidthEm = pxToEm(box1.offsetWidth);
+        var box1WidthRem = pxToRem(box1.offsetWidth);
+        var box1WidthVw = pxToVw(box1.offsetWidth);
+        var box1WidthPercent = pxToPercent(box1.offsetWidth, containerWidth);
+    
+        var box2WidthEm = pxToEm(box2.offsetWidth);
+        var box2WidthRem = pxToRem(box2.offsetWidth);
+        var box2WidthVw = pxToVw(box2.offsetWidth);
+        var box2WidthPercent = pxToPercent(box2.offsetWidth, containerWidth);
+    
+        console.log('Box 1 width:');
+        console.log(box1WidthEm + 'em');
+        console.log(box1WidthRem + 'rem');
+        console.log(box1WidthVw + 'vw');
+        console.log(box1WidthPercent + '%');
+    
+        console.log('Box 2 width:');
+        console.log(box2WidthEm + 'em');
+        console.log(box2WidthRem + 'rem');
+        console.log(box2WidthVw + 'vw');
+        console.log(box2WidthPercent + '%');
+      </script>
+    </body>
+    </html>
+    
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .box {
+    width: 10rem;
+    height: 10rem;
+    background-color: #ff0000;
+    margin: 2em;
+    display: inline-block;
+    font-size: 1em;
+  }

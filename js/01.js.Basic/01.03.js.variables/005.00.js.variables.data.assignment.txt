@@ -9,7 +9,7 @@
 
 --- example: assign the variable name "number" a variable data type value of a number data type value 10
 
-    var variable)name = variable_data_type_value;
+    var variable_name = variable_data_type_value;
 
     var number = 10;
 

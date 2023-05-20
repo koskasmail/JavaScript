@@ -1,4 +1,17 @@
-/* Style for input fields */
+.title {
+    font-size: 26px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: white;
+}
+
 input[type=number] {
     padding: 10px;
     border: 1px solid #ccc;
@@ -6,6 +19,7 @@ input[type=number] {
     box-sizing: border-box;
     margin-bottom: 10px;
     font-size: 16px;
+    background-color: white;
 }
 
 input[type=text] {
@@ -15,28 +29,22 @@ input[type=text] {
     box-sizing: border-box;
     margin-bottom: 10px;
     font-size: 16px;
-}
-
-#celsius {
-    color:red;
-}
-
-.symbol {
-    color: red;
-}
-
-/* Style for container */
-.container {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 label {
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+button:hover {
+    background-color: lightslategrey
 }

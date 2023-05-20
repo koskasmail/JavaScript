@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Pixel to Em/Rem Converter</title>
-    <link rel="stylesheet" href="css_size.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <br>
+    <div class="title_container">
+        <div class="title">Pixel to Em/Rem Converter</div>
+    </div>
+    <br>
     <div class="container">
         <div class="input-field">
             <label id="f1" for="pxInput"> Px: </label>
             <input type="number" id="pxInput" step="any">
         </div>
         <div class="input-field">
-            <label  id="f2" for="emOutput"> Em: </label>
+            <label id="f2" for="emOutput"> Em: </label>
             <input type="text" id="emOutput" readonly>
         </div>
         <div class="input-field">
-            <label  id="f3" for="remOutput">Rem: </label>
+            <label id="f3" for="remOutput">Rem: </label>
             <input type="text" id="remOutput" readonly>
         </div>
     </div>
 
-    <script src="css_size.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
+
 </html>

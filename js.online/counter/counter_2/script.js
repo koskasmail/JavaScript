@@ -11,10 +11,25 @@ let count_plus = document.getElementById('count_plus');
 count_minus.onclick = minus;
 count_plus.onclick = plus;
 
-// window.onload = function() {
-//      updateDispay();
-// }
+document.addEventListener("keydown", function(event) {
+    if (event.key === "+") {
+        plus();
+    }
 
+    if (event.key === "-") {
+        minus();
+    }
+
+    if (event.key === "Escape") {
+        count=0;
+        updateDispay();
+    }
+
+ // if (event.key === "F1") {
+    //     alert("F1");
+    // }
+
+});
 
 function plus() {
     if (count < max )

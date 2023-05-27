@@ -12,14 +12,15 @@ count_minus.onclick = minus;
 count_plus.onclick = plus;
 
 document.addEventListener("keydown", function(event) {
-    if (event.key === "+") {
+    
+    if ((event.key === "+") || (event.key === "ArrowUp") ) {
         plus();
     }
 
-    if (event.key === "-") {
+    if ((event.key === "-") || (event.key === "ArrowDown")) {
         minus();
     }
-
+    
     if (event.key === "Escape") {
         count=0;
         updateDispay();

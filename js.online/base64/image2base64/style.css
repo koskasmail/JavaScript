@@ -1,9 +1,52 @@
-* {
+/* * {
     color: white;
     background-color:black;
-}
+} */
 
 textarea {
     width: 80%;
     height: 60px;
-  }
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    /* padding-left: 5%; */
+
+}
+
+#img {
+    width: 40%;
+    height: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for container */
+.container {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    text-align: center;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <title>image2base64</title>
 </head>
+
 <body>
-    <input type="file" id="image-input">
-    <button onclick="convertToBase64()">Convert to Base64</button>
-    <div id="base64-output"></div>
-    <textarea id="output"></textarea>
-    <button onclick="copyToClipboard()">Copy to Clipboard</button>
-    <div id="status"></div>
+    <div class="container">
+        <input type="file" id="img">
+        <br /><br />
+        <button onclick="convertToBase64()">Convert to Base64</button>
+        <br />
+    </div>
+    <div class="container">
+        <div id="base64-output"></div>
+
+        <textarea id="output"></textarea>
+        <br />
+        <br />
+        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+
+    </div>
+    <div class="container">
+
+        <div id="status"> - - - - - </div>
+    </div>
+    </div>
+
+
     <script src="script.js" defer></script>
 </body>
-</html>
 
+</html>
